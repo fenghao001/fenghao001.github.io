@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 多媒体作品集</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- 左侧导航栏 -->
+  <nav class="sidebar">
+    <div class="s-logo">AI 多媒体作品集<small>PORTFOLIO</small></div>
+    <a class="s-top" href="#top">回到封面</a>
+    <div class="s-group">精选项目</div>
+    <a href="#p1">① 商业广告 · TVC / MV</a>
+    <a href="#p2">② 机甲短片 · 漫剧</a>
+    <a href="#p3">③ 仙侠短片 · 短剧</a>
+    <a href="#p4">④ 电商视觉全案</a>
+    <a href="#p5">⑤ 变装 / 换装视频</a>
+    <a href="#p6">⑥ 国风动画 · 儿童绘本</a>
+    <a href="#p7">⑦ 萌宠 / ASMR</a>
+    <div class="s-group">联系</div>
+    <a href="#contact">联系我</a>
+  </nav>
+
+  <div class="cover" id="top">
+    <div class="cover-bg" aria-hidden="true"></div>
+    <div class="cover-content">
+      <div class="cover-kicker">AIGC · PORTFOLIO 2026</div>
+      <div class="cover-title-en">AIGC</div>
+      <div class="cover-title-cn">作品集</div>
+      <div class="cover-subtitle">where imagination sets sail</div>
+      <p class="cover-desc">用 AI 做商业级视觉与视频内容</p>
+      <p class="cover-desc-sub">覆盖广告影像、电商设计、剧情短剧、国风动画</p>
+      <div class="cover-contact">冯浩 | 15303977267</div>
+      <div class="cover-works">
+        <!-- <div class="cover-works-title">FEATURED WORKS</div> -->
+        <div class="cover-categories">
+          <span>TVC广告</span>
+          <span>AI MV音乐</span>
+          <span>AI 短剧/漫剧</span>
+          <span>电商广告</span>
+          <span>电商服装</span>
+          <span>国风绘本</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- 精选项目 -->
+    <section>
+      <div class="sec-head">
+        <div class="sec-num" style="background:#d97706;">1</div>
+        <h2>作品集</h2>
+      </div>
+
+      <!-- ① 商业广告 -->
+      <div class="proj" id="p1">
+        <div class="p-title">商业广告 · 品牌短片</div>
+        <span class="p-tag">TVC</span><span class="p-tag">MV</span>
+        <div class="p-desc">运用 AI 生成式影像完成一支 TVC 广告片与一支 MV 音乐视频，覆盖画面生成、动态与后期全流程，探索 AI 在商业影像中的落地可能。</div>
+        <div class="p-meta">工作流：ComfyUI 节点流调用 MiniMax H3 直接生成视频画面 → 剪映剪辑、配乐、成片输出</div>
+        <div
+          style="display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;">
+          <div class="media-item">
+            <video controls preload="metadata" src="media/01-商业广告/TVC.mp4"></video>
+            <div class="cap">TVC 广告片</div>
+          </div>
+          <div class="media-item">
+            <video controls preload="metadata" src="media/01-商业广告/MV.mp4"></video>
+            <div class="cap">MV 音乐视频</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ② 机甲大战 -->
+      <div class="proj" id="p2">
+        <div class="p-title">《机甲》</div>
+        <span class="p-tag">片段</span>
+        <div class="p-desc">一部 100 秒、10 镜的 3D 国漫 CG 级漫剧，讲述末日废土中拾荒者觉醒「超文明机甲」、迎战「赤眼异兽」的热血故事。全片由 AI 分镜脚本 + 角色一致性卡 +
+          色板系统驱动生成，体现 AI 在叙事型视频中的控制力。</div>
+        <div class="p-meta">目标模型：即梦 Seedance 2.0 ｜ 画风：3D 国漫 CG（UE5 质感厚涂）</div>
+        <div class="media-single">
+          <video controls preload="metadata" src="media/02-机甲大战/短剧漫剧.mp4"></video>
+          <div class="cap">成片 · 《机甲》</div>
+        </div>
+        <div class="p-process">
+          <b>创作过程</b>
+          <ol>
+            <li><b>分镜脚本</b> —— 编写 10 镜完整脚本，每镜明确景别/角度/焦距/运镜/音效/台词，总时长 100 秒。</li>
+            <li><b>角色一致性卡</b> —— 为主角「零号拾荒者」、巨兽「赤眼异兽」建立外貌锚定 + 色彩签名 + 表情库，保证跨镜头角色一致。</li>
+            <li><b>色板系统</b> —— 三套氛围色板：末日废土冷寂（母板）/ 星舰幽蓝科技 / 机甲觉醒猩红高燃（爆点板），统一全片色调。</li>
+            <li><b>负面参数库</b> —— 内置「面部变形/多指/塑料感/玩具感」等负面词库，规避 AI 生成常见翻车点。</li>
+            <li><b>逐镜生成 + 后期</b> —— 按镜头卡生成画面与动态，剪映完成剪辑、音效与成片输出。</li>
+          </ol>
+        </div>
+        <div class="prompt">
+          提示词节选（风格前缀）：3D写实风格，国漫CG级别，虚幻引擎5高质量建模厚涂，机甲硬核，暗黑写实，8K超清，电影级UE5渲染，PBR物理材质，全局体积光照，金属冷硬，冷色调，高饱和猩红点缀，高对比度光影，暗黑压抑，热血高燃……
+        </div>
+        <h4 style="margin-top:14px;">幕后设定</h4>
+        <div class="media-grid">
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/零号拾荒者（主角）.png" alt="零号拾荒者">
+            <div class="cap">角色 · 零号拾荒者</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/赤眼异兽.png" alt="赤眼异兽">
+            <div class="cap">角色 · 赤眼异兽</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/超文明机甲.png" alt="超文明机甲">
+            <div class="cap">角色 · 超文明机甲</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/末日废土冷寂色板（母板）.png" alt="色板">
+            <div class="cap">色板 · 废土冷寂</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/星舰幽蓝科技色板.png" alt="色板">
+            <div class="cap">色板 · 星舰幽蓝</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/机甲觉醒猩红高燃色板（爆点板）.png" alt="色板">
+            <div class="cap">色板 · 猩红高燃</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/末日废土荒原战场.png" alt="场景">
+            <div class="cap">场景 · 荒原战场</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/失落星舰残骸舱室.png" alt="场景">
+            <div class="cap">场景 · 星舰残骸</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/机甲觉醒高光瞬间.png" alt="高光">
+            <div class="cap">高光瞬间</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/拾荒者旧工具包.png" alt="道具">
+            <div class="cap">道具 · 旧工具包</div>
+          </div>
+          <div class="media-item"><img src="media/02-机甲大战/behind-the-scenes/图片.jpg" alt="参考">
+            <div class="cap">参考图</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ③ 仙侠高燃 -->
+      <div class="proj" id="p3">
+        <div class="p-title">《仙侠》</div>
+        <span class="p-tag">仙侠古风</span><span class="p-tag">30秒 / 5镜</span>
+        <div class="p-desc">30 秒、5 镜的国漫仙侠古风高燃打斗短剧，主角陆惊鸿于天绝山门废墟觉醒雷法、紫霄神雷反杀追兵，玄渊真人压轴登场。全片由 AI 分镜脚本 + 角色一致性卡驱动生成，体现 AI
+          在高燃短剧上的控制力。</div>
+        <div class="p-meta">目标模型：即梦 Seedance 2.0 ｜ 画风：国漫仙侠古风</div>
+        <h4 style="margin-top:14px;margin-bottom:6px;">完整视频</h4>
+        <div class="media-single">
+          <video controls preload="metadata" src="media/07-仙侠高燃/完整.mp4"></video>
+          <div class="cap">完整视频</div>
+        </div>
+        <h4 style="margin-top:14px;margin-bottom:6px;">视频分镜（5 镜）</h4>
+        <div
+          style="display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;">
+          <div class="media-item"><video controls preload="metadata" src="media/07-仙侠高燃/分镜1.mp4"></video>
+            <div class="cap">镜1 · 废墟困兽</div>
+          </div>
+          <div class="media-item"><video controls preload="metadata" src="media/07-仙侠高燃/分镜2.mp4"></video>
+            <div class="cap">镜2 · 弯刀压制</div>
+          </div>
+          <div class="media-item"><video controls preload="metadata" src="media/07-仙侠高燃/分镜3.mp4"></video>
+            <div class="cap">镜3 · 雷纹觉醒</div>
+          </div>
+          <div class="media-item"><video controls preload="metadata" src="media/07-仙侠高燃/分镜4.mp4"></video>
+            <div class="cap">镜4 · 紫霄神雷反杀</div>
+          </div>
+          <div class="media-item"><video controls preload="metadata" src="media/07-仙侠高燃/分镜5.mp4"></video>
+            <div class="cap">镜5 · 玄渊降临</div>
+          </div>
+        </div>
+        <h4 style="margin-top:14px;margin-bottom:6px;">角色设定图</h4>
+        <div class="media-grid">
+          <div class="media-item"><img src="media/07-仙侠高燃/角色-陆惊鸿.png" alt="陆惊鸿">
+            <div class="cap">主角 · 陆惊鸿</div>
+          </div>
+          <div class="media-item"><img src="media/07-仙侠高燃/角色-厉无咎.png" alt="厉无咎">
+            <div class="cap">追兵首领 · 厉无咎</div>
+          </div>
+          <div class="media-item"><img src="media/07-仙侠高燃/角色-玄渊真人.png" alt="玄渊真人">
+            <div class="cap">强者 · 玄渊真人</div>
+          </div>
+          <div class="media-item"><img src="media/07-仙侠高燃/角色-追兵杂兵.png" alt="追兵杂兵">
+            <div class="cap">群像 · 追兵杂兵</div>
+          </div>
+        </div>
+        <h4 style="margin-top:14px;margin-bottom:6px;">分镜脚本</h4>
+        <div class="p-process">
+          <b>创作过程</b>
+          <ol>
+            <li><b>角色一致性卡</b> —— 为主角陆惊鸿、追兵首领厉无咎、压轴强者玄渊真人、追兵杂兵建立外貌锚定 + 色彩签名 + 表情库，保证跨镜头角色一致。</li>
+            <li><b>参考素材清单</b> —— 12 项参考素材（角色/场景/道具/特效/色板）锁定 Seedance 2.0 的输入。</li>
+            <li><b>负面提示词</b> —— 全局负面词库（面部变形/多指/现代服饰/文字水印等），规避 AI 翻车点。</li>
+            <li><b>逐镜提示词</b> —— 5 镜完整提示词，每镜含空间锚、角色卡、光影锁、声音锁、主画面描述与运镜。</li>
+            <li><b>逐镜生成 + 后期</b> —— 按镜头卡生成画面与动态，剪映完成剪辑与成片输出。</li>
+          </ol>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);">完整分镜脚本详见 <code>media/07-仙侠高燃/分镜脚本.md</code></p>
+        </div>
+      </div>
+
+      <!-- ④ 电商视觉 -->
+      <div class="proj" id="p4">
+        <div class="p-title">电商视觉全案</div>
+        <span class="p-tag">主图</span><span class="p-tag">详情页</span>
+        <div class="p-desc">为电商场景生成品牌主图与详情页视觉，突出产品卖点与统一调性，验证 AI 在商业设计中的效率与质量。</div>
+        <div
+          style="display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;">
+          <div class="media-item"><img src="media/03-电商视觉/电商海报.png" alt="电商海报">
+            <div class="cap">电商海报 1</div>
+          </div>
+          <div class="media-item"><img src="media/03-电商视觉/电商海报-2.png" alt="电商海报">
+            <div class="cap">电商海报 2</div>
+          </div>
+          <div class="media-item" style="max-width:280px;"><img src="media/03-电商视觉/电商详情页.png" alt="电商详情页">
+            <div class="cap">电商详情页</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj" id="p5">
+        <div class="p-title">变装，换装视频</div>
+        <span class="p-tag">变身</span><span class="p-tag">换装</span>
+        <div class="p-desc">探索图生视频与人物一致性技术，实现人物变身与换装效果，展示对角色外观与动态的稳定控制。</div>
+        <div class="media-grid">
+          <div class="media-item">
+            <video controls preload="metadata" src="media/04-变身换装/变装.mp4"></video>
+            <div class="cap">变身特效</div>
+          </div>
+          <div class="media-item">
+            <video controls preload="metadata" src="media/04-变身换装/换装.mp4"></video>
+            <div class="cap">换装特效</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj" id="p6">
+        <div class="p-title">国风古诗词动画 + 儿童绘本</div>
+        <span class="p-tag">传统文化</span><span class="p-tag">跨媒介</span>
+        <div class="p-desc">将传统文化与 AI 影像结合，完成古诗词动画与儿童绘本插画，体现文化审美与跨媒介表达能力。</div>
+        <div class="media-single">
+          <video controls preload="metadata" src="media/05-国风儿童/国风古诗词动画.mp4"></video>
+          <div class="cap">国风古诗词动画</div>
+        </div>
+        <div class="media-single" style="margin-top:12px;">
+          <a href="media/05-国风儿童/儿童绘本.png" target="_blank"><img src="media/05-国风儿童/儿童绘本.png" alt="儿童绘本"
+              style="cursor:zoom-in;"></a>
+          <div class="cap">儿童绘本（点击查看大图）</div>
+        </div>
+      </div>
+      <div class="proj" id="p7">
+        <div class="p-title">萌宠 / ASMR 短视频</div>
+        <span class="p-tag">泛娱乐</span><span class="p-tag">流量内容</span>
+        <div class="p-desc">面向短视频平台制作萌宠与 ASMR 内容，关注选题与流量调性，验证 AI 内容在泛娱乐场景的适用性。</div>
+        <div
+          style="display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;">
+          <div class="media-item">
+            <video controls preload="metadata" src="media/06-泛娱乐/萌宠视频.mp4"></video>
+            <div class="cap">萌宠视频</div>
+          </div>
+          <div class="media-item">
+            <video controls preload="metadata" src="media/06-泛娱乐/ASMR.mp4"></video>
+            <div class="cap">ASMR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section>
+      <div class="sec-head" id="contact">
+        <div class="sec-num" style="background:#059669;">2</div>
+        <h2>联系我</h2>
+      </div>
+      <div class="card">
+        <table>
+          <tr>
+            <td style="width:90px;font-weight:700;color:var(--ink);">姓名</td>
+            <td>冯浩</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;color:var(--ink);">电话</td>
+            <td>15303977267</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;color:var(--ink);">邮箱</td>
+            <td><a href="mailto:a353994489@163.com">a353994489@163.com</a></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;color:var(--ink);">微信</td>
+            <td>FH_7267</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="note">AI 多媒体作品集 · 带媒体展示版</div>
+
+  </div>
+</body>
+
+</html>
